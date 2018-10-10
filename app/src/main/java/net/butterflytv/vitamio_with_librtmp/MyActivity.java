@@ -18,13 +18,13 @@ public class MyActivity extends Activity {
 
         setContentView(R.layout.activity_my);
 
-        if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
-            return;
+        /*if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
+            return;*/
 
         videoView = (VideoView) findViewById(R.id.vitamio_player);
 
         // you may need to add " live=1" at the end of uri if it is live in red5 server
-        videoView.setVideoPath("rtmp://54.194.98.151/ButterFly_Red5/1416128155176.flv");
+        videoView.setVideoPath("rtmp://rtmp.cdn.ua/vo.org.ua_live/_definst_/-1360800839_519885679");
 
         // also try -> rtmp://31.204.128.140/live/brlive_0028
         // buffering may take some time
